@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Attachment</title>
+  <style>
+    .fixed {
+      height: 200px;
+      background-image: url('https://via.placeholder.com/800x400');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .scroll {
+      height: 200px;
+      background-image: url('https://via.placeholder.com/800x400');
+      background-size: cover;
+      background-attachment: scroll;
+      background-position: center;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .local {
+      height: 120px;
+      overflow: auto;
+      background-image: url('https://via.placeholder.com/400x200');
+      background-size: cover;
+      background-attachment: local;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Background Attachment</h1>
+  <div class="fixed">fixed</div>
+  <div class="scroll">scroll</div>
+  <div class="local">local (scroll inside box)</div>
+</body>
+</html>

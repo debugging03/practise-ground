@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Align Items</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      align-items: end;
+      padding: 10px;
+      background: #faf7ff;
+      height: 180px;
+    }
+    .box {
+      background: #e7def9;
+      padding: 10px;
+      border: 1px solid #8a7;
+    }
+  </style>
+</head>
+<body>
+  <h1>align-items</h1>
+  <div class="grid">
+    <div class="box">End</div>
+    <div class="box">End</div>
+    <div class="box">End</div>
+  </div>
+</body>
+</html>

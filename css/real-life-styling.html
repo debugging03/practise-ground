@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline, Internal, External Example</title>
+  <link rel="stylesheet" href="real-life-external.css">
+  <style>
+    .card {
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      max-width: 420px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Shopping item</h2>
+    <p style="color: #d15;">Inline style sets this text color directly in HTML.</p>
+    <p class="external-note">External style sets this box look from another file.</p>
+    <p class="card">Internal style sets this card spacing and background.</p>
+  </div>
+</body>
+</html>

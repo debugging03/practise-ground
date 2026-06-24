@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logical Pseudo Class</title>
+  <style>
+    input:valid {
+      border: 1px solid #2a7;
+    }
+    input:invalid {
+      border: 1px solid #d22;
+    }
+    input:checked + label {
+      color: #047;
+    }
+  </style>
+</head>
+<body>
+  <h1>Logical Pseudo Class</h1>
+  <form>
+    <label>Email: <input type="email" required></label><br><br>
+    <input type="checkbox" id="agree">
+    <label for="agree">Agree</label>
+  </form>
+</body>
+</html>

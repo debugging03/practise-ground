@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child Selector</title>
+  <style>
+    .menu > li {
+      color: #1a4;
+      list-style: none;
+      margin: 6px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Child selector</h1>
+  <ul class="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+  <div>
+    <ul>
+      <li>This list is not inside .menu, so it is not styled.</li>
+    </ul>
+  </div>
+</body>
+</html>

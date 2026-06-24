@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Place Self</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 14px;
+      background: #f5f5ff;
+      height: 240px;
+    }
+    .box {
+      background: #dde8ff;
+      padding: 12px;
+      border: 1px solid #9ab;
+    }
+    .start { place-self: start; }
+    .center { place-self: center; }
+    .end { place-self: end; }
+  </style>
+</head>
+<body>
+  <h1>place-self</h1>
+  <div class="grid">
+    <div class="box start">Start</div>
+    <div class="box center">Center</div>
+    <div class="box end">End</div>
+  </div>
+</body>
+</html>

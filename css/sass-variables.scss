@@ -1,0 +1,15 @@
+$main-color: #2a7;
+$padding: 14px;
+
+.card {
+  background: #f8fff4;
+  border: 1px solid darken($main-color, 10%);
+  padding: $padding;
+  color: #123;
+}
+
+.button {
+  background: $main-color;
+  color: white;
+  padding: $padding / 2;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>::before ::after ::marker</title>
+  <style>
+    .note::before {
+      content: "Note: ";
+      color: #f40;
+      font-weight: bold;
+    }
+    .button::after {
+      content: " →";
+    }
+    ul li::marker {
+      color: #369;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS ::before ::after ::marker</h1>
+  <p class="note">This paragraph gets content before it from CSS.</p>
+  <button class="button">Next</button>
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+  </ul>
+</body>
+</html>

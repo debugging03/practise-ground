@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Div Tag & List Numbering Formats</title>
+  <style>body{font-family:Arial;padding:1.5rem;} .box{border:1px solid #ddd;padding:10px;border-radius:6px}</style>
+</head>
+<body>
+  <h1>Div Tag and List Numbering</h1>
+  <h2>What is a <code>&lt;div&gt;</code>?</h2>
+  <p><code>&lt;div&gt;</code> is a generic container — use it to group content and style with CSS.</p>
+  <div class="box">
+    <p>Example wrapper:</p>
+    <div style="background:#f5faff;padding:8px;border-radius:4px">I am inside a div</div>
+  </div>
+
+  <h2>Change OL numbering format</h2>
+  <p>Use the <code>type</code> attribute or CSS <code>list-style-type</code>.</p>
+  <p>HTML attribute examples:</p>
+  <ol type="1">
+    <li>1 (default)</li>
+  </ol>
+  <ol type="A">
+    <li>A</li>
+    <li>B</li>
+  </ol>
+  <ol type="a">
+    <li>a</li>
+    <li>b</li>
+  </ol>
+  <ol type="I">
+    <li>I</li>
+    <li>II</li>
+  </ol>
+
+  <p>CSS example (more flexible):</p>
+  <style> .roman { list-style-type: upper-roman; } .lower-alpha { list-style-type: lower-alpha; } </style>
+  <ol class="roman"><li>Upper Roman</li><li>Second</li></ol>
+  <ol class="lower-alpha"><li>alpha</li><li>beta</li></ol>
+
+  <p><a href="index.html">Back to index</a></p>
+</body>
+</html>

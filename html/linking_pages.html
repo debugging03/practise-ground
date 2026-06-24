@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Link Multiple Pages — Simple Site</title>
+  <style>body{font-family:Arial;padding:1.5rem;}nav a{margin-right:12px;color:#0b66c3}</style>
+</head>
+<body>
+  <h1>How to Link Multiple Pages</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lists.html">Lists</a>
+    <a href="code_escape.html">Code</a>
+    <a href="divs_numbering.html">Div & Numbering</a>
+    <a href="anchor.html">Anchor</a>
+  </nav>
+
+  <p>Put the same header/nav in every page (or use server includes) so users can move around easily.</p>
+
+  <h2>Relative vs absolute links</h2>
+  <p>Relative: <code>about.html</code> — good for same website. Absolute: <code>https://example.com/about</code> — links anywhere.</p>
+
+  <h2>Example: link to a subfolder</h2>
+  <p>If pages are in a folder, use <code>pages/about.html</code>. From a subfolder up one level use <code>../index.html</code>.</p>
+
+  <p><a href="index.html">Back to index</a></p>
+</body>
+</html>

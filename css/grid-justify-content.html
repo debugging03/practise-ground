@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Justify Content</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      justify-content: start;
+      gap: 10px;
+      padding: 14px;
+      background: #fdf8ff;
+      border: 1px solid #ccd;
+    }
+    .box {
+      background: #ece8ff;
+      padding: 14px;
+      border: 1px solid #b3a;
+    }
+  </style>
+</head>
+<body>
+  <h1>justify-content</h1>
+  <div class="grid">
+    <div class="box">Item 1</div>
+    <div class="box">Item 2</div>
+    <div class="box">Item 3</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Input Color Practice</title>
+  <style>body{font-family:Arial;padding:1rem;}label{display:block;margin:8px 0;}</style>
+</head>
+<body>
+  <h1>Color Picker</h1>
+  <label for="favcolor">Choose a color:</label>
+  <input id="favcolor" type="color" value="#ff0000">
+  <p id="val" style="margin-top:10px;color:#333;"></p>
+  <script>
+    const c = document.getElementById('favcolor');
+    const v = document.getElementById('val');
+    v.textContent = 'Selected: ' + c.value;
+    c.addEventListener('input', ()=> v.textContent = 'Selected: ' + c.value);
+  </script>
+</body>
+</html>

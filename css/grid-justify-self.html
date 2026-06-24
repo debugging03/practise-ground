@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Justify Self</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 14px;
+      background: #f4f4ff;
+    }
+    .box {
+      background: #eef;
+      padding: 16px;
+      border: 1px solid #88a;
+    }
+    .left { justify-self: start; }
+    .center { justify-self: center; }
+    .right { justify-self: end; }
+  </style>
+</head>
+<body>
+  <h1>justify-self</h1>
+  <div class="grid">
+    <div class="box left">Start</div>
+    <div class="box center">Center</div>
+    <div class="box right">End</div>
+  </div>
+</body>
+</html>

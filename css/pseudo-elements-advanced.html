@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Pseudo Elements</title>
+  <style>
+    details summary::marker {
+      color: #047;
+    }
+    .file-input::before {
+      content: "Choose file";
+      display: inline-block;
+      padding: 8px 12px;
+      background: #ddd;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    input::placeholder {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Advanced Pseudo Elements</h1>
+  <details>
+    <summary>More info</summary>
+    <p>Details uses a special marker style.</p>
+  </details>
+  <label class="file-input"></label>
+  <input type="file">
+  <br><br>
+  <input placeholder="Enter name">
+</body>
+</html>

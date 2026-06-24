@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Align Content</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 120px);
+      grid-template-rows: repeat(3, 80px);
+      align-content: stretch;
+      gap: 10px;
+      padding: 14px;
+      background: #fff8f0;
+      height: 320px;
+      border: 1px solid #ccb;
+    }
+    .box {
+      background: #ffe8d1;
+      border: 1px solid #d6a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>align-content</h1>
+  <div class="grid">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+</body>
+</html>

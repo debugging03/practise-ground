@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rendering Engine Workflow</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 30px;
+      background: #fefefe;
+      color: #1a1a1a;
+    }
+    .step {
+      margin-bottom: 14px;
+      padding: 12px;
+      border: 1px solid #dde;
+      border-radius: 6px;
+      background: #fbfcff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Browser Rendering Workflow</h1>
+  <div class="step"><strong>1. HTML parses:</strong> Browser reads HTML and builds the DOM.</div>
+  <div class="step"><strong>2. CSS parses:</strong> Browser reads styles and builds the CSSOM.</div>
+  <div class="step"><strong>3. Layout:</strong> Browser combines DOM and CSSOM and decides position and sizes.</div>
+  <div class="step"><strong>4. Paint:</strong> Browser draws pixels on the screen.</div>
+</body>
+</html>

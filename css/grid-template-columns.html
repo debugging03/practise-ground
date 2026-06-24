@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Template Columns</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 150px 2fr 1fr;
+      gap: 10px;
+      border: 1px solid #ccd;
+      padding: 10px;
+    }
+    .item {
+      background: #eef;
+      padding: 14px;
+      border: 1px solid #99c;
+    }
+  </style>
+</head>
+<body>
+  <h1>grid-template-columns</h1>
+  <div class="grid">
+    <div class="item">150px</div>
+    <div class="item">2fr</div>
+    <div class="item">1fr</div>
+  </div>
+</body>
+</html>

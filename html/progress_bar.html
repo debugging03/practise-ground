@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Progress Bar Practice</title>
+  <style>body{font-family:Arial;padding:1rem;}progress{width:100%;height:20px}</style>
+</head>
+<body>
+  <h1>Progress</h1>
+  <progress id="p" value="40" max="100"></progress>
+  <div style="margin-top:8px;"><button id="inc">+10%</button> <button id="dec">-10%</button></div>
+  <script>
+    const p = document.getElementById('p');
+    document.getElementById('inc').addEventListener('click', ()=> p.value = Math.min(p.max, p.value + 10));
+    document.getElementById('dec').addEventListener('click', ()=> p.value = Math.max(0, p.value - 10));
+  </script>
+</body>
+</html>

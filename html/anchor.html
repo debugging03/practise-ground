@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mastering the Anchor Tag (&lt;a&gt;)</title>
+  <style>body{font-family:Arial;padding:1.5rem;}code{background:#f4f4f4;padding:2px 6px;border-radius:4px}</style>
+</head>
+<body>
+  <h1>Anchor Tag (&lt;a&gt;) — Links in HTML</h1>
+  <h2>Basic link</h2>
+  <p><code>&lt;a href="https://example.com"&gt;Go&lt;/a&gt;</code> — navigates to another page.</p>
+  <p>Example: <a href="https://example.com">Visit example.com</a></p>
+
+  <h2>Open in new tab</h2>
+  <p>Add <code>target="_blank"</code> and for safety <code>rel="noopener noreferrer"</code>:</p>
+  <p><a href="https://example.com" target="_blank" rel="noopener noreferrer">Open in new tab</a></p>
+
+  <h2>Anchor to page section</h2>
+  <p>Use a hash to jump inside the same page: <code>&lt;a href="#about"&gt;About&lt;/a&gt;</code> and element with <code>id="about"</code>.</p>
+  <p><a href="#sample">Jump to sample</a></p>
+
+  <h2>Mailto and phone</h2>
+  <p><a href="mailto:me@example.com">Send email</a> — opens mail client. <a href="tel:+123456789">Call</a> — on supported devices.</p>
+
+  <h2>Linking files</h2>
+  <p>Link to local files in the same site with relative paths: <code>&lt;a href="pages/about.html"&gt;About&lt;/a&gt;</code>.</p>
+
+  <hr>
+  <h3 id="sample">Sample anchor target</h3>
+  <p id="about">This is the "about" section; anchors jump here.</p>
+
+  <p><a href="index.html">Back to index</a></p>
+</body>
+</html>

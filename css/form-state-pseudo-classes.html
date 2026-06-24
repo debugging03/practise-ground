@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form State Pseudo Classes</title>
+  <style>
+    input:required {
+      border: 2px solid #2c7;
+    }
+    input:optional {
+      border: 2px dashed #999;
+    }
+    input:read-only {
+      background: #f4f4f4;
+    }
+    input:read-write {
+      background: white;
+    }
+    textarea:placeholder-shown {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form State Pseudo Classes</h1>
+  <form>
+    <label>Required: <input type="text" required></label><br><br>
+    <label>Optional: <input type="text"></label><br><br>
+    <label>Read-only: <input type="text" value="Read only" readonly></label><br><br>
+    <label>Text area: <textarea placeholder="Write here"></textarea></label>
+  </form>
+</body>
+</html>

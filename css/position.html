@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Position</title>
+  <style>
+    .static-box {
+      position: static;
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .relative-box {
+      position: relative;
+      top: 10px;
+      left: 10px;
+      border: 1px solid #26a;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .absolute-box {
+      position: relative;
+      height: 140px;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+    .absolute-box span {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #fee;
+      padding: 6px;
+      border: 1px solid #e55;
+    }
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background: #fff;
+      border: 1px solid #000;
+      padding: 8px;
+    }
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background: #eef;
+      padding: 10px;
+      border: 1px solid #89a;
+    }
+    .filler {
+      height: 240px;
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Position</h1>
+  <div class="static-box">Static position follows normal flow.</div>
+  <div class="relative-box">Relative position shifts from its normal spot.</div>
+  <div class="absolute-box">
+    Absolute is placed inside a relative container.
+    <span>Absolute box</span>
+  </div>
+  <div class="filler"></div>
+  <div class="sticky-box">Sticky stays near top while you scroll.</div>
+  <div class="fixed-box">Fixed stays at the screen corner.</div>
+</body>
+</html>

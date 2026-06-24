@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Descendant Selectors</title>
+  <style>
+    .card p {
+      color: #2b2;
+      margin: 0;
+    }
+    .note {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Descendant selector</h2>
+    <p>This paragraph is inside <code>.card</code>, so it is styled by <code>.card p</code>.</p>
+  </div>
+  <p class="note">A paragraph outside the .card does not get that style.</p>
+</body>
+</html>

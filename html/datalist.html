@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Datalist Practice</title>
+  <style>body{font-family:Arial;padding:1rem;}input{padding:6px;width:260px}</style>
+</head>
+<body>
+  <h1>Datalist</h1>
+  <label for="browser">Choose browser</label>
+  <input list="browsers" id="browser" name="browser" placeholder="Start typing...">
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+    <option value="Safari">
+  </datalist>
+  <p style="color:#666;font-size:0.9rem;">Type to see suggestions.</p>
+</body>
+</html>

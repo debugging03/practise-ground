@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Place Items</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      place-items: center stretch;
+      padding: 14px;
+      background: #f5fff2;
+    }
+    .box {
+      background: #dfffe3;
+      padding: 16px;
+      border: 1px solid #8cb;
+    }
+  </style>
+</head>
+<body>
+  <h1>place-items</h1>
+  <div class="grid">
+    <div class="box">Centered horizontally</div>
+    <div class="box">Stretched vertically</div>
+  </div>
+</body>
+</html>

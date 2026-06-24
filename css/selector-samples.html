@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors Sample</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f7fbff;
+    }
+    .box {
+      background: white;
+      padding: 14px;
+      border: 1px solid #cbd3e0;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    #main-title {
+      color: #144;
+    }
+    .highlight {
+      color: #185;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-title">CSS Selectors</h1>
+  <div class="box">
+    <p>This paragraph uses the <strong>element selector</strong> <code>p</code>.</p>
+  </div>
+  <div class="box highlight">
+    <p>This box uses the <strong>class selector</strong> <code>.highlight</code>.</p>
+  </div>
+  <div class="box">
+    <p id="intro">This paragraph has an <strong>ID selector</strong> <code>#intro</code>.</p>
+  </div>
+  <div class="box">
+    <p>This uses the <strong>universal selector</strong> <code>*</code> to set box sizing.</p>
+  </div>
+</body>
+</html>

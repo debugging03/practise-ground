@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Column Positioning</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+    .item {
+      background: #f5f8ff;
+      padding: 14px;
+      border: 1px solid #88a;
+    }
+    .wide {
+      grid-column: 1 / 4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grid Column Start and End</h1>
+  <div class="grid">
+    <div class="item wide">Spans columns 1 through 3</div>
+    <div class="item">Box 2</div>
+    <div class="item">Box 3</div>
+    <div class="item">Box 4</div>
+  </div>
+</body>
+</html>

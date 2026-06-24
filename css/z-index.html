@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS z-index</title>
+  <style>
+    .container {
+      position: relative;
+      width: 280px;
+      height: 180px;
+      background: #f0f3ff;
+      border: 1px solid #bbc;
+      margin: 20px;
+    }
+    .box1, .box2, .box3 {
+      position: absolute;
+      width: 140px;
+      height: 100px;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+    }
+    .box1 { background: #ff6f61; top: 10px; left: 10px; z-index: 1; }
+    .box2 { background: #4f9; top: 40px; left: 50px; z-index: 3; }
+    .box3 { background: #3c7df0; top: 80px; left: 90px; z-index: 2; }
+  </style>
+</head>
+<body>
+  <h1>CSS z-index</h1>
+  <div class="container">
+    <div class="box1">z-index:1</div>
+    <div class="box2">z-index:3</div>
+    <div class="box3">z-index:2</div>
+  </div>
+</body>
+</html>

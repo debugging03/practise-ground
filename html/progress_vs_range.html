@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Progress vs Range Practice</title>
+  <style>body{font-family:Arial,sans-serif;padding:1rem;}progress,input[type='range']{width:100%;margin-top:8px;}</style>
+</head>
+<body>
+  <h1>Progress vs Range</h1>
+  <p>Progress shows status. Range lets user choose a value.</p>
+  <progress id="prog" value="60" max="100"></progress>
+  <label for="slider">Slider</label>
+  <input id="slider" type="range" min="0" max="100" value="60">
+  <script>
+    const prog = document.getElementById('prog');
+    const slider = document.getElementById('slider');
+    slider.addEventListener('input', () => prog.value = slider.value);
+  </script>
+</body>
+</html>

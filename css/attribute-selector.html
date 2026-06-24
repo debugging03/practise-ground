@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attribute Selector</title>
+  <style>
+    input[type="text"] {
+      border: 1px solid #39a;
+      padding: 8px;
+      width: 180px;
+    }
+    input[disabled] {
+      background: #eef;
+    }
+  </style>
+</head>
+<body>
+  <h1>Attribute selector</h1>
+  <label>
+    Name: <input type="text" placeholder="Type name">
+  </label>
+  <br><br>
+  <label>
+    Disabled: <input type="text" disabled value="Cannot edit">
+  </label>
+</body>
+</html>
